@@ -3,7 +3,7 @@ import React from 'react'
 const TodayForecast = () => {
    return (
       <div className='text-center'>
-         <h4 className='text-cyan-300 text-xl mb-5'>Cloudy</h4>
+         <h4 className='text-cyan-300 text-xl mb-4'>Cloudy</h4>
 
          <div className='flex flex-row justify-between items-center'>
             <img src="https://o.remove.bg/downloads/39ae67c4-b42f-4bab-9e40-b4b63153e1df/sun-removebg-preview.png" alt="" className='w-20' />
