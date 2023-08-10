@@ -2,7 +2,7 @@ import React from 'react'
 
 const DateAndLocation = () => {
   return (
-    <div className='mt-8 mb-6 text-center text-white'>
+    <div className='mt-8 mb-7 text-center text-white'>
       <div className='flex flex-row justify-center items-center'>
         <h4 className='font-extralight text-xl'>Tuesday, 31 May 2022</h4>
         <p className='mx-5'>|</p>
