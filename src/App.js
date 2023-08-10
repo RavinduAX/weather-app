@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import DateAndLocation from './component/DateAndLocation';
+import Forecast from './component/Forecast';
+import Navbar from './component/Navbar';
+import TodayForecast from './component/TodayForecast';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mx-auto max-w-screen-md mt-6 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 shadow-xl h-fit shadow-gray-400'>
+      <Navbar />
+      <DateAndLocation />
+      <TodayForecast />
+      <Forecast title={'hourly forecast'} />
     </div>
   );
 }
