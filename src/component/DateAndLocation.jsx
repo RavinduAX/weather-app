@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const DateAndLocation = () => {
+
   return (
     <div className='mt-8 mb-7 text-center text-white'>
       <div className='flex flex-row justify-center items-center'>
@@ -9,7 +10,7 @@ const DateAndLocation = () => {
         <h4 className='font-extralight text-xl'>Local Time: 03:04PM</h4>
       </div>
 
-      <h4 className='mt-4 text-2xl font-semibold'>Berlin, GE</h4>
+      <h4 className='mt-4 text-2xl font-semibold'>Colombo, SL</h4>
     </div>
   )
 }
