@@ -14,6 +14,7 @@ const Navbar = ({getData}) => {
 
   const handleClick = () => {
     getWeatherData();
+    setCity('')
   }
 
 
