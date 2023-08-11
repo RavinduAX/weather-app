@@ -6,8 +6,14 @@ const Navbar = ({getData}) => {
 
   const [city, setCity] = useState('');
 
+  const getWeatherData = () => {
+    axios.get(`http://api.weatherapi.com/v1/forecast.json?key=a393728118084352b3571035231005&q=${city}`)
+      .then(res => getData(res.data))
+      .catch(err => console.log(err))
+  }
+
   const handleClick = () => {
-    
+    getWeatherData();
   }
 
 
