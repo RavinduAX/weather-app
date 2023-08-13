@@ -27,7 +27,7 @@ function App() {
       <Navbar getData={getData} />
       <DateAndLocation data={data} />
       <TodayForecast data={data} />
-      <Forecast title={'hourly forecast'} data={data} />
+      <Forecast title={'daily forecast'} data={data} />
     </div>
   );
 }
