@@ -17,7 +17,7 @@ function App() {
   }
 
   useEffect(() => {
-    axios.get(`http://api.weatherapi.com/v1/forecast.json?key=a393728118084352b3571035231005&q=${location}`)
+    axios.get(`http://api.weatherapi.com/v1/forecast.json?key=a393728118084352b3571035231005&q=${location}&days=5`)
       .then(res => setData(res.data))
       .catch(err => console.log(err))
   }, [location])
@@ -27,7 +27,7 @@ function App() {
       <Navbar getData={getData} />
       <DateAndLocation data={data} />
       <TodayForecast data={data} />
-      <Forecast title={'hourly forecast'} />
+      <Forecast title={'hourly forecast'} data={data} />
     </div>
   );
 }
